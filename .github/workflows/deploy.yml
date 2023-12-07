@@ -72,4 +72,5 @@ jobs:
           bucket: naveed-gha-custom
           dist-folder: ./dist
       - name: Output deployed url
-        run: "Live Url : ${{steps.deploy.outputs.website-url}}"
+        run: |
+          echo "Live Url : ${{steps.deploy.outputs.website-url}}"
